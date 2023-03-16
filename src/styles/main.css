@@ -1,5 +1,13 @@
+html,
 body {
-    background-color: #000 !important;
+  color: #000 !important;
+  background: #fff !important;
+}
+
+[data-theme='dark'],
+[data-theme='dark'] body {
+  color: #fff !important;
+  background: #000 !important;
 }
 
 a {

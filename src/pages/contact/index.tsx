@@ -7,7 +7,7 @@ export default function Contact() {
         <title>Furkan Karakuzu | Contact</title>
         <meta name="description" content="Furkan Karakuzu contact." />
       </Head>
-      <h2 className="my-5 fw-bold text-light">Contact</h2>
+      <h2 className="mb-4 fw-bold">Contact</h2>
       <Image
         src={"/404.gif"}
         alt={"404"}

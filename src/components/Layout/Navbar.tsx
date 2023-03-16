@@ -14,7 +14,7 @@ export default function Navbar() {
             className="rounded-circle"
           />
           <div className="d-flex flex-column">
-            <h1 className="fs-2 fw-normal text-white">Furkan Karakuzu</h1>
+            <h1 className="fs-2 fw-normal">Furkan Karakuzu</h1>
             <a className="text-muted" href="mailto:furkannkarakuzu@hotmail.com" target="_blank">
               furkannkarakuzu@hotmail.com
             </a>

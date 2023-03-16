@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Header() {
   return (
-    <header className="row fs-1">
+    <header className="row fs-1 mb-5">
       <Link href={'/'} className="cursor-pointer col-12 col-md-6 bg-primary text-white fw-bold p-3 rounded-3 d-flex align-items-center justify-content-center">
         Home
       </Link>

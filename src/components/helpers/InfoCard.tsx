@@ -26,20 +26,20 @@ export default function InfoCard (
         <div className="d-flex flex-column gap-2">
           <div className="d-flex align-items-center gap-3">
             <div className="d-flex flex-column">
-              <h4 className="fw-bold text-light">
+              <h4 className="fw-bold">
                 {title}
               </h4>
-              <h6 className="d-flex flex-wrap align-items-center gap-1 fw-normal text-light">
-                <a className="me-2 d-flex align-items-center text-white" href={subTitleLink} target="_blank">
+              <h6 className="d-flex flex-wrap align-items-center gap-1 fw-normal text-secondary">
+                <a className="me-2 d-flex align-items-center" href={subTitleLink} target="_blank">
                   <span>{subTitle} <span className='text-muted'><FontAwesomeIcon icon={faArrowUpRightFromSquare} width="14" height={14} /> </span></span>
                 </a>
-                <span className="text-secondary fs-6">
+                <span className="fs-6">
                   ( {dateStart} - {dateEnd} )
                 </span>
               </h6>
             </div>
           </div>
-          <span dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br />') }}></span>
+          <span className='text-secondary' dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br />') }}></span>
           {listName && (
             <span className="d-flex flex-wrap align-items-center gap-1 fw-bold text-secondary">
               {listName}:&nbsp;

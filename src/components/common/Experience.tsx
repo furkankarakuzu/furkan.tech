@@ -45,8 +45,8 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <section className={`mt-5`}>
-            <h2 className="mb-4 fw-bold text-light">Experience</h2>
+        <section>
+            <h2 className="mb-4 fw-bold">Experience</h2>
             <Stepper className="ms-3">
             {experiences.map((experience, index) => {
                 return (

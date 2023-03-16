@@ -7,7 +7,7 @@ export default function Notes() {
         <title>Furkan Karakuzu | Notes</title>
         <meta name="description" content="Furkan Karakuzu's notes." />
       </Head>
-      <h2 className="my-5 fw-bold text-light">Notes</h2>
+      <h2 className="mb-4 fw-bold">Notes</h2>
       <Image
         src={"/404.gif"}
         alt={"404"}

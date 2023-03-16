@@ -8,7 +8,7 @@ interface StepperProps {
 export const Stepper: FC<StepperProps> = (props) =>{
   return (
     <ol
-      className={`position-relative border-start border-secondary text-secondary ${props.className}`}
+      className={`position-relative border-start border-secondary ${props.className}`}
     >
       {props.children}
     </ol>

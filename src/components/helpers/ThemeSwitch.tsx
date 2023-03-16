@@ -25,7 +25,7 @@ export default function ThemeSwitch() {
     </button>
   ) : (
     <button type="button" name="dark" className='bg-transparent border-0' onClick={toggleTheme}>
-      <Moon className="fs-4 text-white" />
+      <Moon className="fs-4" />
     </button>
   );
 };

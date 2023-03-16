@@ -27,8 +27,8 @@ export default function Works() {
         <title>Furkan Karakuzu | Works</title>
         <meta name="description" content="Furkan Karakuzu's works." />
       </Head>
-      <div className="row text-white mt-5">
-      <h2 className="mb-4 fw-bold text-light">Works</h2>
+      <div className="row">
+      <h2 className="mb-4 fw-bold">Works</h2>
       {isLoading && <Loading/>}
         {!isLoading && works &&
           works.data.map((item: any) => {
@@ -42,7 +42,7 @@ export default function Works() {
                       {item.description}
                     </p>
                   </div>
-                  <div className="card-footer d-flex justify-content-between">
+                  <div className="card-footer bg-transparent border-0 d-flex justify-content-between">
                     <span className="text-muted fs-6">
                     {dayjs(item.created_at).format('DD-MM-YYYY')}
                     </span>

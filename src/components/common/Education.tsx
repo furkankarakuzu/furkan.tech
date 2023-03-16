@@ -26,7 +26,7 @@ const educations = [
 export default function Education() {
     return (
         <section className={`mt-5`}>
-            <h2 className="mb-4 fw-bold text-light">Education</h2>
+            <h2 className="mb-4 fw-bold">Education</h2>
             <Stepper className="ms-3">
             {educations.map((education, index) => {
                 return (
