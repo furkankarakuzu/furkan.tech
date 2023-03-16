@@ -16,7 +16,7 @@ export default function Navbar() {
           <div className="d-flex flex-column">
             <h1 className="fs-2 fw-normal text-white">Furkan Karakuzu</h1>
             <a className="text-muted" href="mailto:furkan@furkan.tech" target="_blank">
-              furkan@furkan.tech
+              furkannkarakuzu@hotmail.com
             </a>
             <div className="d-flex gap-2 ">
               <a className="text-muted" aria-label="Twitter profile link" href="https://twitter.com/furkannkarakuzu" target="_blank">

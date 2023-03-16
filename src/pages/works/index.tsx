@@ -28,7 +28,7 @@ export default function Works() {
         {works &&
           works.data.map((item: any) => {
             return (
-              <div className="col-12 col-sm-4 my-2 d-flex flex-column">
+              <div key={item.id} className="col-12 col-sm-4 my-2 d-flex flex-column">
                 <div className=" border border-1 rounded-3 d-flex align-items-stretch h-100">
                   <div className="card bg-transparent d-flex flex-column w-100">
                   <div className="card-body">
