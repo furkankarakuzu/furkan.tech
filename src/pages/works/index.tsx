@@ -2,14 +2,18 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import axios, { AxiosResponse } from "axios";
 import dayjs from 'dayjs'
+import Loading from '../../components/icons/Loading'
 export default function Works() {
   const [works, setWorks] = useState<AxiosResponse | null | void>(null);
+  const [isLoading, setIsLoading] = useState(false);
   const fetchProjects = () => {
+    setIsLoading(true);
     axios
       .get("https://api.github.com/users/furkankarakuzu/repos")
       .then((response) => {
-        response.data.sort((a:any,b:any) =>  b.stargazers_count - a.stargazers_count)
-        setWorks(response)
+        response.data.sort((a:any,b:any) =>  b.stargazers_count - a.stargazers_count);
+        setWorks(response);
+        if(response) setIsLoading(false);
       });
   };
 
@@ -25,7 +29,8 @@ export default function Works() {
       </Head>
       <div className="row text-white mt-5">
       <h2 className="mb-4 fw-bold text-light">Works</h2>
-        {works &&
+      {isLoading && <Loading/>}
+        {!isLoading && works &&
           works.data.map((item: any) => {
             return (
               <div key={item.id} className="col-12 col-sm-4 my-2 d-flex flex-column">
