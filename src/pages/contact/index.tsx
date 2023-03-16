@@ -8,17 +8,22 @@ export default function Contact() {
         <meta name="description" content="Furkan Karakuzu contact." />
       </Head>
       <h2 className="mb-4 fw-bold">Contact</h2>
-      <Image
-        src={"/404.gif"}
-        alt={"404"}
-        width={700}
-        height={475}
-        sizes="100vw"
-        style={{
-          width: "100%",
-          height: "auto",
-        }}
-      />
+      <div className="text-center">
+        <h5>the under construction</h5>
+        <iframe
+          src="https://giphy.com/embed/qgQUggAC3Pfv687qPC"
+          width="480"
+          height="360"
+          frameBorder="0"
+          className="giphy-embed"
+          allowFullScreen
+        ></iframe>
+        <p>
+          <a href="https://giphy.com/gifs/dommespace-domme-space-programador-qgQUggAC3Pfv687qPC">
+            via GIPHY
+          </a>
+        </p>
+      </div>
     </>
   );
 }
