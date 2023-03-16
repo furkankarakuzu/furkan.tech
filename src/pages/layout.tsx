@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 interface LayoutProps {
     children: any;
  }
-export const Layout: FC<LayoutProps> = (props) => {
+const Layout: FC<LayoutProps> = (props) => {
   return (
     <>
         <main className={[inter.className, 'my-1 container'].join(' ')}>
@@ -17,3 +17,5 @@ export const Layout: FC<LayoutProps> = (props) => {
     </>
   )
 }
+
+export default Layout

@@ -3,7 +3,7 @@ import '@/styles/main.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import "@fortawesome/fontawesome-svg-core";
 import { ThemeProvider } from 'next-themes'
-import {Layout} from './layout'
+import Layout from './layout'
 
 import type { AppProps } from 'next/app'
 
