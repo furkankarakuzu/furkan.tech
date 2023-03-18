@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../layout";
-export default function Notes() {
+import ContactComponent from "@/components/common/Contact";
+export default function Contact() {
   return (
     <>
       <Head>
@@ -8,23 +9,10 @@ export default function Notes() {
         <meta name="description" content="Furkan Karakuzu's contact." />
       </Head>
       <Layout>
-      <h2 className="mb-4 fw-bold">Contact</h2>
-      <div className="text-center">
-        <h5>the under construction</h5>
-        <iframe
-          src="https://giphy.com/embed/qgQUggAC3Pfv687qPC"
-          width="480"
-          height="360"
-          frameBorder="0"
-          className="giphy-embed"
-          allowFullScreen
-        ></iframe>
-        <p>
-          <a href="https://giphy.com/gifs/dommespace-domme-space-programador-qgQUggAC3Pfv687qPC">
-            via GIPHY
-          </a>
-        </p>
-      </div>
+        <div className="mb-5">
+          <p>You can send me an e-mail by filling out the fields on this page.</p>
+        </div>
+        <ContactComponent />
       </Layout>
     </>
   );

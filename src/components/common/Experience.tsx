@@ -6,7 +6,7 @@ const experiences = [
       companyName: "feature/mind",
       dateStart: "August 2022",
       dateEnd: "Current",
-      description: `I take on the role of a front-end developer in a team who builds e-commerce websites with Salesforce.
+      description: `I take on the role of a Frontend Developer in a team who builds e-commerce websites with Salesforce.
 
       Some developments I made:
       - Writing or modifying storefront pages
