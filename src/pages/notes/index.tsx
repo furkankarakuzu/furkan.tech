@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Layout from "../Layout";
 export default function Notes() {
   return (
     <>
@@ -7,6 +7,7 @@ export default function Notes() {
         <title>Furkan Karakuzu | Notes</title>
         <meta name="description" content="Furkan Karakuzu's notes." />
       </Head>
+      <Layout>
       <h2 className="mb-4 fw-bold">Notes</h2>
       <div className="text-center">
         <h5>the under construction</h5>
@@ -24,6 +25,7 @@ export default function Notes() {
           </a>
         </p>
       </div>
+      </Layout>
     </>
   );
 }

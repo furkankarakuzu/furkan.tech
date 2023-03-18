@@ -3,6 +3,7 @@ import Head from "next/head";
 import axios, { AxiosResponse } from "axios";
 import dayjs from 'dayjs'
 import Loading from '../../components/icons/Loading'
+import Layout from "../Layout";
 export default function Works() {
   const [works, setWorks] = useState<AxiosResponse | null | void>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -27,6 +28,7 @@ export default function Works() {
         <title>Furkan Karakuzu | Works</title>
         <meta name="description" content="Furkan Karakuzu's works." />
       </Head>
+      <Layout>
       <div className="row">
       <h2 className="mb-4 fw-bold">Works</h2>
       {isLoading && <Loading/>}
@@ -56,6 +58,7 @@ export default function Works() {
             );
           })}
       </div>
+      </Layout>
     </>
   );
 }

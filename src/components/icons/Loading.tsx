@@ -1,81 +1,31 @@
 export default function asd() {
   return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        style={{
-          margin: "auto",
-          display: "block",
-        }}
-        width="200px"
-        height="200px"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="xMidYMid"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      style={{margin: "auto", display:" block"}}
+      width="96"
+      height="96"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="xMidYMid"
+    >
+      <path
+        fill="none"
+        stroke="#93dbe9"
+        stroke-width="8"
+        stroke-dasharray="42.76482137044271 42.76482137044271"
+        d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z"
+        stroke-linecap="round"
+        style={{transform:"scale(0.8)",transformOrigin:"50px 50px"}}
       >
-        <rect x="17.5" y="30" width="15" height="40" fill="#3c73ed">
-          <animate
-            attributeName="y"
-            repeatCount="indefinite"
-            dur="1s"
-            calcMode="spline"
-            keyTimes="0;0.5;1"
-            values="18;30;30"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-            begin="-0.2s"
-          ></animate>
-          <animate
-            attributeName="height"
-            repeatCount="indefinite"
-            dur="1s"
-            calcMode="spline"
-            keyTimes="0;0.5;1"
-            values="64;40;40"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-            begin="-0.2s"
-          ></animate>
-        </rect>
-        <rect x="42.5" y="30" width="15" height="40" fill="#ffffff">
-          <animate
-            attributeName="y"
-            repeatCount="indefinite"
-            dur="1s"
-            calcMode="spline"
-            keyTimes="0;0.5;1"
-            values="20.999999999999996;30;30"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-            begin="-0.1s"
-          ></animate>
-          <animate
-            attributeName="height"
-            repeatCount="indefinite"
-            dur="1s"
-            calcMode="spline"
-            keyTimes="0;0.5;1"
-            values="58.00000000000001;40;40"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-            begin="-0.1s"
-          ></animate>
-        </rect>
-        <rect x="67.5" y="30" width="15" height="40" fill="#ffda31">
-          <animate
-            attributeName="y"
-            repeatCount="indefinite"
-            dur="1s"
-            calcMode="spline"
-            keyTimes="0;0.5;1"
-            values="20.999999999999996;30;30"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-          ></animate>
-          <animate
-            attributeName="height"
-            repeatCount="indefinite"
-            dur="1s"
-            calcMode="spline"
-            keyTimes="0;0.5;1"
-            values="58.00000000000001;40;40"
-            keySplines="0 0.5 0.5 1;0 0.5 0.5 1"
-          ></animate>
-        </rect>
-      </svg>
+        <animate
+          attributeName="stroke-dashoffset"
+          repeatCount="indefinite"
+          dur="1s"
+          keyTimes="0;1"
+          values="0;256.58892822265625"
+        ></animate>
+      </path>
+    </svg>
   );
 }

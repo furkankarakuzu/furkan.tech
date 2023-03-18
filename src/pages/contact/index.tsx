@@ -1,12 +1,13 @@
 import Head from "next/head";
-import Image from "next/image";
-export default function Contact() {
+import Layout from "../Layout";
+export default function Notes() {
   return (
     <>
       <Head>
         <title>Furkan Karakuzu | Contact</title>
-        <meta name="description" content="Furkan Karakuzu contact." />
+        <meta name="description" content="Furkan Karakuzu's contact." />
       </Head>
+      <Layout>
       <h2 className="mb-4 fw-bold">Contact</h2>
       <div className="text-center">
         <h5>the under construction</h5>
@@ -24,6 +25,7 @@ export default function Contact() {
           </a>
         </p>
       </div>
+      </Layout>
     </>
   );
 }
