@@ -13,7 +13,7 @@ export default function Notes() {
           <p>
             There are videos, blog posts, etc. on this page that I like, find
             interesting and think will help me. You can visit the
-            repository page by clicking the "View More" button.
+            repository page by clicking the &quot;View More&quot; button.
           </p>
         </div>
         <NotesComponent />

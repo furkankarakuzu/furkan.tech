@@ -13,7 +13,7 @@ export default function Works() {
           <p>
             On this page, there are my repositories that I pulled from{" "}
             <b>GitHub</b> using <b>GitHub REST API</b>. You can visit the
-            repository page by clicking the "Details" button.
+            repository page by clicking the &quot;Details&quot; button.
           </p>
         </div>
         <WorksComponent />

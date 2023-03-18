@@ -42,8 +42,8 @@ export default function Home() {
             applications with <b>Nest.js</b>.
           </p>
           <p>
-            I'm currently a Frontend Developer on a team that builds e-commerce
-            websites with <b>Salesforce</b>, and I'm developing on the{" "}
+            I&apos;m currently a Frontend Developer on a team that builds e-commerce
+            websites with <b>Salesforce</b>, and I&apos;m developing on the{" "}
             <b>React Pwa Kit.</b>
           </p>
         </div>
