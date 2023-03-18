@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import axios, { AxiosResponse } from "axios";
 import dayjs from 'dayjs'
-import Loading from '../../components/icons/Loading'
-import Layout from "../Layout";
+import Loading from '@/components/icons/Loading'
+import Layout from "@/pages/Layout";
 export default function Works() {
   const [works, setWorks] = useState<AxiosResponse | null | void>(null);
   const [isLoading, setIsLoading] = useState(false);

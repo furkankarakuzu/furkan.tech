@@ -1,7 +1,7 @@
 import { FC } from "react";
-import Navbar from "../components/Layout/Navbar";
-import Header from "../components/Layout/Header";
-import Footer from "../components/Layout/Footer";
+import Navbar from "@/components/Layout/Navbar";
+import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
 import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
