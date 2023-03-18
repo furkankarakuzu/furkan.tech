@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "@/pages/Layout";
+import Layout from "../layout";
 export default function Notes() {
   return (
     <>
