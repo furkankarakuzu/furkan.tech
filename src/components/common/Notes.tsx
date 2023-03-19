@@ -6,9 +6,8 @@ export default function NotesComponent() {
         <h5>the under construction</h5>
         <iframe
           src="https://giphy.com/embed/qgQUggAC3Pfv687qPC"
-          width="480"
+          width="100%"
           height="360"
-          frameBorder="0"
           className="giphy-embed"
           allowFullScreen
         ></iframe>

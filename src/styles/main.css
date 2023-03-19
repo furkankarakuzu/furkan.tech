@@ -3,6 +3,11 @@ body {
   color: #000 !important;
   background: #fff !important;
 }
+main{ min-height: 100vh !important;}
+main{ display:flex; flex-direction:column; }
+.content {
+  flex: 1;
+}
 
 [data-theme='dark'],
 [data-theme='dark'] body {
@@ -13,7 +18,20 @@ body {
 a {
     text-decoration: none !important;
 }
+nav > a {
+  color: #000 !important;
+}
+
+[data-theme='dark'],
+[data-theme='dark'] nav > a {
+  color: white !important;
+}
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.navigation-underline {
+  height: 2px;
+  width: 100%;
 }
