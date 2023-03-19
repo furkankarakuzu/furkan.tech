@@ -19,6 +19,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     text: req.body.message + " mail address : " + req.body.email,
   };
   transporter.sendMail(mailOptions, function (error: any, info: any) {
+    console.log(mailOptions)
     if (error) {
       res.status(301).json({ name: "Email not sending!", error });
     } else {
