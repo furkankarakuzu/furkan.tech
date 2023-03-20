@@ -1,0 +1,266 @@
+{
+    "Brainfuck": {
+        "color": "#2F2530",
+        "url": "https://github.com/trending?l=Brainfuck"
+    },
+    "C": {
+        "color": "#555555",
+        "url": "https://github.com/trending?l=C"
+    },
+    "C#": {
+        "color": "#178600",
+        "url": "https://github.com/trending?l=Csharp"
+    },
+    "C++": {
+        "color": "#f34b7d",
+        "url": "https://github.com/trending?l=C++"
+    },
+    "CoffeeScript": {
+        "color": "#244776",
+        "url": "https://github.com/trending?l=CoffeeScript"
+    },
+    "CSS": {
+        "color": "#563d7c",
+        "url": "https://github.com/trending?l=CSS"
+    },
+    "Dart": {
+        "color": "#00B4AB",
+        "url": "https://github.com/trending?l=Dart"
+    },
+    "Dockerfile": {
+        "color": "#384d54",
+        "url": "https://github.com/trending?l=Dockerfile"
+    },
+    "Dotenv": {
+        "color": "#e5d559",
+        "url": "https://github.com/trending?l=Dotenv"
+    },
+    "Gemfile.lock": {
+        "color": "#701516",
+        "url": "https://github.com/trending?l=Gemfile.lock"
+    },
+    "Gemini": {
+        "color": "#ff6900",
+        "url": "https://github.com/trending?l=Gemini"
+    },
+    "Git Attributes": {
+        "color": "#F44D27",
+        "url": "https://github.com/trending?l=Git-Attributes"
+    },
+    "Git Config": {
+        "color": "#F44D27",
+        "url": "https://github.com/trending?l=Git-Config"
+    },
+    "Git Revision List": {
+        "color": "#F44D27",
+        "url": "https://github.com/trending?l=Git-Revision-List"
+    },
+    "Go": {
+        "color": "#00ADD8",
+        "url": "https://github.com/trending?l=Go"
+    },
+    "Go Checksums": {
+        "color": "#00ADD8",
+        "url": "https://github.com/trending?l=Go-Checksums"
+    },
+    "Go Module": {
+        "color": "#00ADD8",
+        "url": "https://github.com/trending?l=Go-Module"
+    },
+    "GraphQL": {
+        "color": "#e10098",
+        "url": "https://github.com/trending?l=GraphQL"
+    },
+    "HTML": {
+        "color": "#e34c26",
+        "url": "https://github.com/trending?l=HTML"
+    },
+    "HTML+ECR": {
+        "color": "#2e1052",
+        "url": "https://github.com/trending?l=HTML+ECR"
+    },
+    "HTML+EEX": {
+        "color": "#6e4a7e",
+        "url": "https://github.com/trending?l=HTML+EEX"
+    },
+    "HTML+ERB": {
+        "color": "#701516",
+        "url": "https://github.com/trending?l=HTML+ERB"
+    },
+    "HTML+PHP": {
+        "color": "#4f5d95",
+        "url": "https://github.com/trending?l=HTML+PHP"
+    },
+    "HTML+Razor": {
+        "color": "#512be4",
+        "url": "https://github.com/trending?l=HTML+Razor"
+    },
+    "HTTP": {
+        "color": "#005C9C",
+        "url": "https://github.com/trending?l=HTTP"
+    },
+    "Java": {
+        "color": "#b07219",
+        "url": "https://github.com/trending?l=Java"
+    },
+    "Java Properties": {
+        "color": "#2A6277",
+        "url": "https://github.com/trending?l=Java-Properties"
+    },
+    "Java Server Pages": {
+        "color": "#2A6277",
+        "url": "https://github.com/trending?l=Java-Server-Pages"
+    },
+    "JavaScript": {
+        "color": "#f1e05a",
+        "url": "https://github.com/trending?l=JavaScript"
+    },
+    "JavaScript+ERB": {
+        "color": "#f1e05a",
+        "url": "https://github.com/trending?l=JavaScript+ERB"
+    },
+    "JSON": {
+        "color": "#292929",
+        "url": "https://github.com/trending?l=JSON"
+    },
+    "Kotlin": {
+        "color": "#A97BFF",
+        "url": "https://github.com/trending?l=Kotlin"
+    },
+    "Less": {
+        "color": "#1d365d",
+        "url": "https://github.com/trending?l=Less"
+    },
+    "Liquid": {
+        "color": "#67b8de",
+        "url": "https://github.com/trending?l=Liquid"
+    },
+    "MATLAB": {
+        "color": "#e16737",
+        "url": "https://github.com/trending?l=MATLAB"
+    },
+    "Nginx": {
+        "color": "#009639",
+        "url": "https://github.com/trending?l=Nginx"
+    },
+    "NumPy": {
+        "color": "#9C8AF9",
+        "url": "https://github.com/trending?l=NumPy"
+    },
+    "Objective-C": {
+        "color": "#438eff",
+        "url": "https://github.com/trending?l=Objective-C"
+    },
+    "Pascal": {
+        "color": "#E3F171",
+        "url": "https://github.com/trending?l=Pascal"
+    },
+    "PHP": {
+        "color": "#4F5D95",
+        "url": "https://github.com/trending?l=PHP"
+    },
+    "PLSQL": {
+        "color": "#dad8d8",
+        "url": "https://github.com/trending?l=PLSQL"
+    },
+    "PostCSS": {
+        "color": "#dc3a0c",
+        "url": "https://github.com/trending?l=PostCSS"
+    },
+    "PowerShell": {
+        "color": "#012456",
+        "url": "https://github.com/trending?l=PowerShell"
+    },
+    "Prisma": {
+        "color": "#0c344b",
+        "url": "https://github.com/trending?l=Prisma"
+    },
+    "Pug": {
+        "color": "#a86454",
+        "url": "https://github.com/trending?l=Pug"
+    },
+    "Python": {
+        "color": "#3572A5",
+        "url": "https://github.com/trending?l=Python"
+    },
+    "R": {
+        "color": "#198CE7",
+        "url": "https://github.com/trending?l=R"
+    },
+    "Ruby": {
+        "color": "#701516",
+        "url": "https://github.com/trending?l=Ruby"
+    },
+    "Rust": {
+        "color": "#dea584",
+        "url": "https://github.com/trending?l=Rust"
+    },
+    "Sass": {
+        "color": "#a53b70",
+        "url": "https://github.com/trending?l=Sass"
+    },
+    "SCSS": {
+        "color": "#c6538c",
+        "url": "https://github.com/trending?l=SCSS"
+    },
+    "Shell": {
+        "color": "#89e051",
+        "url": "https://github.com/trending?l=Shell"
+    },
+    "Solidity": {
+        "color": "#AA6746",
+        "url": "https://github.com/trending?l=Solidity"
+    },
+    "SQL": {
+        "color": "#e38c00",
+        "url": "https://github.com/trending?l=SQL"
+    },
+    "Stylus": {
+        "color": "#ff6347",
+        "url": "https://github.com/trending?l=Stylus"
+    },
+    "Svelte": {
+        "color": "#ff3e00",
+        "url": "https://github.com/trending?l=Svelte"
+    },
+    "SVG": {
+        "color": "#ff9900",
+        "url": "https://github.com/trending?l=SVG"
+    },
+    "Swift": {
+        "color": "#F05138",
+        "url": "https://github.com/trending?l=Swift"
+    },
+    "TSQL": {
+        "color": "#e38c00",
+        "url": "https://github.com/trending?l=TSQL"
+    },
+    "TypeScript": {
+        "color": "#3178c6",
+        "url": "https://github.com/trending?l=TypeScript"
+    },
+    "Visual Basic .NET": {
+        "color": "#945db7",
+        "url": "https://github.com/trending?l=Visual-Basic-.NET"
+    },
+    "Visual Basic 6.0": {
+        "color": "#2c6353",
+        "url": "https://github.com/trending?l=Visual-Basic-6.0"
+    },
+    "Vue": {
+        "color": "#41b883",
+        "url": "https://github.com/trending?l=Vue"
+    },
+    "WebAssembly": {
+        "color": "#04133b",
+        "url": "https://github.com/trending?l=WebAssembly"
+    },
+    "XML": {
+        "color": "#0060ac",
+        "url": "https://github.com/trending?l=XML"
+    },
+    "YAML": {
+        "color": "#cb171e",
+        "url": "https://github.com/trending?l=YAML"
+    }
+}

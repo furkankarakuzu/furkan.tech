@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import axios, { AxiosResponse } from "axios";
-import dayjs from "dayjs";
 import Loading from "@/components/icons/Loading";
-
+import { GithubRepo } from "@/components/icons/GithubRepo";
+import { GithubStar } from "@/components/icons/GithubStar";
+import githubColors from '../../lib/githubColors.json'
 export default function WorksComponent() {
   const [works, setWorks] = useState<AxiosResponse | null | void>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -18,7 +19,15 @@ export default function WorksComponent() {
         if (response) setIsLoading(false);
       });
   };
-
+  function setLanguageColor(language = null) {
+    let color;
+    [githubColors].forEach((element: any) => {
+      for (const key in element) {
+        if (key===language) color = element[key].color
+      }
+    });
+    return color || 'transparent'
+  }
   useEffect(() => {
     fetchProjects();
   }, []);
@@ -34,24 +43,39 @@ export default function WorksComponent() {
               key={item.id}
               className="col-12 col-sm-4 my-2 d-flex flex-column"
             >
-              <div className=" border border-1 rounded-3 d-flex align-items-stretch h-100">
-                <div className="card bg-transparent d-flex flex-column w-100">
-                  <div className="card-body">
-                    <h5 className="card-title">{item.name}</h5>
-                    <p className="card-text text-muted">{item.description}</p>
+              <div className="d-flex flex-column rounded-1 border border-1 p-3 d-flex align-items-stretch h-100">
+                <div className="d-flex align-items-center gap-2">
+                  <GithubRepo/>
+                  <a
+                    target="_blank"
+                    className="fs-6 fw-bold"
+                    href={item.html_url}
+                  >
+                    {item.name}
+                  </a>
+                </div>
+                <div className="mt-2 text-secondary h-100">
+                  <p>
+                  {item.description}
+                  </p>
+                </div>
+                <div className="mt-2 d-flex align-items-center gap-4 text-secondary">
+                  <div className="d-flex align-items-center gap-1">
+                    <div
+                      className="rounded-circle"
+                      style={{backgroundColor:setLanguageColor(item.language), width:'0.75rem', height:'0.75rem'}}
+                    ></div>
+                    <span>{item.language}</span>
                   </div>
-                  <div className="card-footer bg-transparent border-0 d-flex justify-content-between">
-                    <span className="text-muted fs-6">
-                      {dayjs(item.created_at).format("DD-MM-YYYY")}
-                    </span>
-                    <a
-                      href={item.html_url}
-                      className="card-link"
-                      target="_blank"
-                    >
-                      Details
-                    </a>
-                  </div>
+                  <a
+                    className="d-flex align-items-center gap-1 text-secondary"
+                    target={'_blank'}
+                    href={item.stargazers_url.split('api.').join('').split('/repos').join('')}
+                  >
+                    <GithubStar/>
+                    <span>{item.stargazers_count}</span>
+                  </a>
+                  <span>{item.fork && '(Forked Repository)'}</span>
                 </div>
               </div>
             </div>
