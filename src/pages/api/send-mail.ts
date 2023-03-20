@@ -20,9 +20,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   };
   transporter.sendMail(mailOptions, function (error: any, info: any) {
     if (error) {
-      res.status(301).json({ name: "Email not sending!", error });
+      res.status(301).json({ msg: "Email not sending!", error });
     } else {
-      res.status(200).json({ name: "Email sent!" });
+      res.status(200).json({ msg: "Email sent!" });
     }
   });
 }

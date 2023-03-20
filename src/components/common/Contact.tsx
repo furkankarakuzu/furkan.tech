@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { contactSchema } from "../helpers/ContactFormValidationSchema";
 import axios from "axios";
+import {toast} from 'react-toastify'
 export default function ContactComponent() {
+  const [isLoading, setIsLoading] = useState(false);
   const formik = {
     initialValues: {
       firstname: "",
@@ -13,18 +16,20 @@ export default function ContactComponent() {
     validationSchema: contactSchema,
     onSubmit: (values: any, helpers: any) => {
       try {
+        setIsLoading(true)
         axios
           .post("/api/send-mail", values)
           .then((res) => {
-            console.log(res);
             helpers.resetForm();
-            alert("Email sent!");
+            toast.success(res.data.msg);
           })
           .catch((e) => {
-            console.log(e);
+            toast.error(e.response.data.msg);
           });
       } catch (error) {
         console.log(error);
+      } finally {
+        setIsLoading(false)
       }
     },
   };
@@ -170,7 +175,7 @@ export default function ContactComponent() {
                       </div>
                       <div className="col-md-12">
                         <input
-                          disabled={!isValid || !dirty}
+                          disabled={!isValid || !dirty || isLoading}
                           type="submit"
                           className="btn btn-success btn-send float-end"
                           value="Send message"
